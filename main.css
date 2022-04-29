@@ -110,6 +110,17 @@ input {
     outline: none;
 }
 
+/* Section Layout ============================================ */
+.container { 
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+}
+
 /* SIDEBAR ======================================= */
 .sidebar {
     position: fixed;
@@ -194,4 +205,50 @@ input {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+/* HERO SECTION STYLING ======================================== */
+.main {
+    margin-left: 100px;
+}
+
+.home {
+    background: url(/assets/portrait.jpg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+}
+
+.home__container {
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.home__social {
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+}
+
+.home__social-follow {
+    font-weight: var(--font-medium);
+    position: relative;
+}
+
+.home__social-follow::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--text-color);
+    right: -45%;
+    top: 50%;
+}
+
+.home__img {
+    display: none;
 }
